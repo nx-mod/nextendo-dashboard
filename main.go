@@ -81,6 +81,11 @@ func sources() []gameSrc {
 		// ecoute sur 8092 — surtout pas 8084, qui est celui de SSBU chez nous.
 		{Key: "mta", Label: "Mario Tennis Aces", Color: "#ff4fa3",
 			URL: envOr("DASH_MTA_URL", "http://localhost:8092"), Token: envOr("DASH_MTA_TOKEN", tok)},
+		// Diablo III parle Demonware, pas NEX. Son serveur rend la meme forme de
+		// /api/stats : taches distantes comptees en RMC, parties publiques
+		// bdMatchMaking en gatherings. Tableau de bord sur :8093.
+		{Key: "d3", Label: "Diablo III", Color: "#c0392b",
+			URL: envOr("DASH_D3_URL", "http://localhost:8093"), Token: envOr("DASH_D3_TOKEN", tok)},
 	}
 }
 
