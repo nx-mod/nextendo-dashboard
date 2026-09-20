@@ -87,6 +87,9 @@ func sources() []gameSrc {
 		// Super Mario Bros. Wonder (NPLN)
 		{Key: "wonder", Label: "Super Mario Bros. Wonder", Color: "#ff6f00",
 			URL: envOr("DASH_WONDER_URL", "http://localhost:8100"), Token: envOr("DASH_WONDER_TOKEN", tok)},
+		// Advance Wars 1+2 (NEX). Its server publishes the same /api/stats shape. Dashboard on :8097.
+		{Key: "aw", Label: "Advance Wars 1+2", Color: "#2f6fdb",
+			URL: envOr("DASH_AW_URL", "http://localhost:8097"), Token: envOr("DASH_AW_TOKEN", tok)},
 	}
 }
 
