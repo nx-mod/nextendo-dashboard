@@ -87,6 +87,9 @@ func sources() []gameSrc {
 		// Super Mario Bros. Wonder (NPLN)
 		{Key: "wonder", Label: "Super Mario Bros. Wonder", Color: "#ff6f00",
 			URL: envOr("DASH_WONDER_URL", "http://localhost:8100"), Token: envOr("DASH_WONDER_TOKEN", tok)},
+		// Torchlight II (NEX). Its server publishes the same /api/stats shape. Dashboard on :8096.
+		{Key: "tl2", Label: "Torchlight II", Color: "#b8722c",
+			URL: envOr("DASH_TL2_URL", "http://localhost:8096"), Token: envOr("DASH_TL2_TOKEN", tok)},
 	}
 }
 
