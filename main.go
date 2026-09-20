@@ -87,6 +87,9 @@ func sources() []gameSrc {
 		// Super Mario Bros. Wonder (NPLN)
 		{Key: "wonder", Label: "Super Mario Bros. Wonder", Color: "#ff6f00",
 			URL: envOr("DASH_WONDER_URL", "http://localhost:8100"), Token: envOr("DASH_WONDER_TOKEN", tok)},
+		// Borderlands GOTY (NEX). Its server publishes the same /api/stats shape. Dashboard on :8094.
+		{Key: "bl1", Label: "Borderlands GOTY", Color: "#f1c40f",
+			URL: envOr("DASH_BL1_URL", "http://localhost:8094"), Token: envOr("DASH_BL1_TOKEN", tok)},
 	}
 }
 
