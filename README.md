@@ -1,20 +1,12 @@
-<h1 align="center">nextendo-dashboard</h1>
+# nextendo-dashboard (nx-mod testing)
 
-<p align="center"><b>Unified live monitoring for the Nextendo NEX game servers.</b></p>
+nx-mod's `testing` fork of [nextendo-dashboard](https://github.com/NextendoNetwork/nextendo-dashboard): Unified live monitoring for the Nextendo NEX game servers.
+Part of [nextendo-testing](https://github.com/nx-mod/nextendo-testing): the whole Nextendo Network, run on a LAN. Upstream's README is kept as [README.upstream.md](README.upstream.md).
 
-<p align="center">
-  <img src="https://img.shields.io/badge/license-PolyForm%20Shield%201.0.0-orange" alt="License">
-  <img src="https://img.shields.io/badge/go-1.21%2B-00ADD8" alt="Go">
-</p>
+## nx-mod changes
 
----
+- ARMS and Mario Tennis Aces on the unified dashboard; their defaults fixed so GAMEINFO does not override real ports.
 
-Part of the [Nextendo Network](https://nextendo.network) server stack: see the
-architecture documentation for how it fits together with the game servers and the account server.
+## Credits
 
-Configuration is through environment variables; no secrets, keys, or infrastructure addresses are
-baked into the source. Ships no Nintendo code or data.
-
-## License
-
-Released under the **[PolyForm Shield License 1.0.0](LICENSE.md)**, source-available.
+nextendo-dashboard is the work of the **Nextendo Network team** — https://nextendo.network. nx-mod only adds the changes above, for LAN testing. Nextendo is awesome.
